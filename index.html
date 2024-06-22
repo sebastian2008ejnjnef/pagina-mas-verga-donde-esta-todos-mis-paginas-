@@ -3,19 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Enlaces</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Marco Difuminado</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('URL_DE_TU_IMAGEN_DE_FONDO') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .marco {
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        a:hover {
+            background: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Mis Enlaces Favoritos</h1>
-        <div class="links">
-            <a href="https://www.ejemplo1.com" target="_blank">Enlace 1</a>
-            <a href="https://www.ejemplo2.com" target="_blank">Enlace 2</a>
-            <a href="https://www.ejemplo3.com" target="_blank">Enlace 3</a>
-            <a href="https://www.ejemplo4.com" target="_blank">Enlace 4</a>
-            <a href="https://www.ejemplo5.com" target="_blank">Enlace 5</a>
-        </div>
+    <div class="marco">
+        <h1>Título Principal</h1>
+        <h2>Subtítulo</h2>
+        <a href="#link1">Enlace 1</a>
+        <a href="#link2">Enlace 2</a>
+        <a href="#link3">Enlace 3</a>
+        <a href="#link4">Enlace 4</a>
+        <a href="#link5">Enlace 5</a>
     </div>
 </body>
 </html>
+
