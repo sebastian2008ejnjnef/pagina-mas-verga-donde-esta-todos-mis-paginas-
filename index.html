@@ -65,16 +65,24 @@
             background: rgba(192, 192, 192, 0.5); 
         }
 
-        
         .spotify {
             position: fixed;
-            bottom: 20px;
-            left: 20px;
+            top: 20px; /* Ajustado para que esté más arriba */
+            right: 20px; /* Movido a la derecha */
             width: 300px; 
             height: 380px; 
             border: none;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
+        }
+
+        .imagen-arriba-izquierda {
+            position: fixed;
+            top: 240px; /* Ajustado para posicionar más abajo */
+            left: 20px; /* Posición a la izquierda */
+            width: 500px; /* Ancho de la imagen */
+            height: 400px; /* Altura de la imagen */
+            z-index: 10; /* Asegura que esté por encima del fondo */
         }
     </style>
 </head>
@@ -93,6 +101,7 @@
         <h5>Sebastian Segura Luna</h5>
     </div>
     
+    <img class="imagen-arriba-izquierda" src="https://media.tenor.com/TN4j8IFQ9TUAAAAj/anime-girl.gif" alt="Descripción de la imagen">
     
     <iframe class="spotify" src="https://open.spotify.com/embed/track/78M7CiqTpJYoPQKkwjM48Z" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </body>
