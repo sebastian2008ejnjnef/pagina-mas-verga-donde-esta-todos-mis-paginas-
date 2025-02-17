@@ -1,107 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESARROYO SUSTENTABLE</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: url('https://c.wallhere.com/photos/71/2d/anime_cityscape_apocalyptic_Tokyo_shibuya_station_Shibuya_destruction_nature-1771701.jpg!d') no-repeat center center fixed;
-            background-size: cover;
-            background-color: rgba(0, 0, 0, 0.5); 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column; 
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESARROLLO SUSTENTABLE</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Se elimina la imagen de fondo, ya que se usará el video */
+      background-color: rgba(0, 0, 0, 0.5); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column; 
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Contenedor para el video de fondo */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    
+    .video-background iframe {
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
 
-        .marco {
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            border-radius: 15px;
-            width: 300px;
-            margin-bottom: 20px; 
-        }
+    .marco {
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 15px;
+      width: 320px;
+      margin-bottom: 20px; 
+      background: rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
 
-        .marco:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://pa1.aminoapps.com/6627/8c48d9663d8f334a27e7b17a2064b6860571b3ec_00.gif') no-repeat center center;
-            background-size: cover;
-            filter: blur(10px); 
-            z-index: -1; 
-        }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
 
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
 
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
+    .iconos {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      align-items: center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+      padding: 10px;
+      border-radius: 10px;
+    }
 
-        a {
-            display: block;
-            color: #333;
-            text-decoration: none;
-            margin: 10px 0;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.5); 
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        a:hover {
-            background: rgba(192, 192, 192, 0.5); 
-        }
-
-        .imagen-arriba-izquierda {
-            position: fixed;
-            top: 240px; 
-            left: 20px; 
-            width: 500px; 
-            height: 400px; 
-            z-index: 10; 
-        }
-
-        .imagen-arriba-derecha {
-            position: fixed;
-            top: 240px; 
-            right: 20px; 
-            width: 500px; 
-            height: 400px; 
-            z-index: 10; 
-        }
-    </style>
+    .icono {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+  </style>
 </head>
 <body>
-    <div class="marco">
-        <h1>DESARROLLO SUSTENTABLE </h1>
-        <h2>𐐘 ඞ</h2>
-        <a href="https://youtu.be/BtLSaxRnIhc?si=0km-t9ZhqNWMStIq">equipo 1</a>
-        <a href="https://youtu.be/BtLSaxRnIhc?si=0km-t9ZhqNWMStIq">equipo 2</a>
-        <a href="https://youtu.be/BtLSaxRnIhc?si=0km-t9ZhqNWMStIq">equipo 3</a>
-        <a href="https://youtu.be/BtLSaxRnIhc?si=0km-t9ZhqNWMStIq">equipo 4</a>
-        <a href="https://youtu.be/BtLSaxRnIhc?si=0km-t9ZhqNWMStIq">equipo 5</a>
-        <a href="https://youtu.be/BtLSaxRnIhc?si=0km-t9ZhqNWMStIq">equipo 6</a> 
-        <h3></h3>
-        <h4>PROYECTO AULA </h4>
-        <h5>3IM10</h5>
+  <!-- Video de fondo -->
+  <div class="video-background">
+    <iframe src="https://www.youtube.com/embed/w6K0iDsu0TM?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=w6K0iDsu0TM" 
+            frameborder="0" 
+            allow="autoplay; fullscreen" 
+            allowfullscreen>
+    </iframe>
+  </div>
+  
+  <div class="marco">
+    <h1>DESARROLLO SUSTENTABLE</h1>
+    <h2>𐐘 ඞ</h2>
+    <div class="iconos">
+      <a href="https://youtu.be/BtLSaxRnIhc?si=0km-t9ZhqNWMStIq">
+        <img class="icono" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Microsoft_Word_2013-2019_logo.svg" alt="Word">
+      </a>
+      <a href="https://youtu.be/BtLSaxRnIhc?si=0km-t9ZhqNWMStIq">
+        <img class="icono" src="https://w7.pngwing.com/pngs/872/849/png-transparent-microsoft-powerpoint-icon-microsoft-powerpoint-presentation-slide-slide-show-power-point-angle-text-rectangle-thumbnail.png" alt="PowerPoint">
+      </a>
+      <a href="https://youtu.be/BtLSaxRnIhc?si=0km-t9ZhqNWMStIq">
+        <img class="icono" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+      </a>
     </div>
-    
-    <img class="imagen-arriba-izquierda" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d44e8e4c-db34-4361-8508-e7288d4cc10f/d57z7qu-d57d1c92-4139-40f3-865a-681742291883.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q0NGU4ZTRjLWRiMzQtNDM2MS04NTA4LWU3Mjg4ZDRjYzEwZlwvZDU3ejdxdS1kNTdkMWM5Mi00MTM5LTQwZjMtODY1YS02ODE3NDIyOTE4ODMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.rS6gfU8lEgvazwR5ttFVY0yY6aGGn1NCPlAB0qAUroQ" alt="Descripción de la imagen">
-    <img class="imagen-arriba-derecha" src="https://1.bp.blogspot.com/-8cvfXOBh9K8/Vk9K9iocVAI/AAAAAAAEg7k/Ev7F0E7Gkiw/s1600/EMOTICONO%2B1.gif" alt="Descripción de la imagen">
+    <h4>EQUIPO 5 DIBUJO</h4>
+    <h5>4IM10</h5>
+  </div>
 </body>
 </html>
